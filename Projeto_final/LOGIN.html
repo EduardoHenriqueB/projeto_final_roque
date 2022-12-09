@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="editLogin.css">
+</head>
+<body>
+    <div class="centralizar">
+        <form id="formulario">
+            <h1>LOGIN</h1>
+            <label>Email</label>
+            <input type="text" placeholder="example@hotmail.com" required class="inputs" id="email"><br>
+            <label>Senha</label>
+            <input type="password" placeholder="**************" required class="inputs" id="senha">
+            <br><button type="submit" class="botao" onclick="logar(); return false">Entrar</button>
+            <p>Ainda não está cadastrado? <a href="CADASTRO.html">Cadastra-se!</a></p>
+        </form>
+
+        <script>
+            function logar(){
+            var email = document.getElementById('email').value;
+            var senha = dsdfocument.getElementById('senha').value;
+
+            if(email == "asdfsddmin@gmail.com" && senha == "admin"){
+             location.hrfdhdfdfgef = "atividades.html";
+            }else{
+                alert('Verifique se o Email ou Senha estão corretos.');
+            }
+}
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="editLogin.css">
+</head>
+<body>
+    <div class="centralizar">
+        <form id="formulario">
+            <h1>CADASTRO</h1>
+            <label>Email</label>
+            <input type="email" placeholder="example@hotmail.com" required class="inputs" id="email"><br>
+            <label>Senha</label>
+            <input type="password" placeholder="**************" required class="inputs" id="senha">
+            <label>Repetir Senha</label>
+            <input type="password" placeholder="**************" required class="inputs" id="senha">
+            <br><button class="botao" onclick="cadastrar(); return false">Cadastrar</button>
+            <p>Já está cadastrado? <a href="LOGIN.html">Faça o Login!</a></p>
+        </form>
+        <script>
+            function cadastrar(){
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            if(email == "admin@gmail.com" && senha == "admin"){
+             location.href = "LOGIN.html";
+            }else{
+                alert('As informações não foram preenchidas corretamente.');
+            }
+}
+        </script>
+    </div>
+</body>
+</html>
